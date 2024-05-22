@@ -1,7 +1,41 @@
 body{
-    background-color: gray;
-    background-image: url(https://plus.unsplash.com/premium_photo-1715876234432-aee502a59dcd?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
 
+    
+    background-image: url(https://plus.unsplash.com/premium_photo-1715876234432-aee502a59dcd?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    
+}
+
+
+.iform{
+    text-align: center;
+    font-size: 25px;
+    border: 3px solid rgb(64, 64, 64);
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 10px;
+    /*background-color: rgb(145, 82, 82);*/
+    background-image: url();
+    color: rgb(252, 252, 252);
+}
+.iform input{
+    font-size: 20px;
+    margin: 10px;
+    
+    
+}
+#imagen{
+    width: 150px;
+    height: 100px;
+    border-radius: 10px;
+    float: left;
+
+}
+
+#inicio{
+    font-size: 25px;
+    text-align: center;
+    
+    margin: 10px;
 }
 .menu{
     background-color: black;
@@ -58,4 +92,10 @@ ul,ol{
     margin: auto;
     width: 500px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#separador{
+
+    width: 200px;
+    height: 200px;
+
 }

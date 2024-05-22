@@ -4,21 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
+    <link rel="stylesheet" href="estilos.css/contacto.css">
 </head>
 <body>
     
-    <form action="">
-        <label for="iname">nombre:</label>
+    <div class="menu">
+        <img id="imagen" src="imagenes/Jarkov.jpg" alt="imagen principal">
+<div id="header">
+    <ul class="menu-lista">
+        <li><a  href="index.html">Inicio</a></li>
+        <li><a  href="">Tienda</a>
+        <ul>
+            <li><a href="">Hombre</a></li>
+            <li><a href="">Mujer</a></li>
+        </ul>
+        </li>
+        <li><a  href="contacto.html">Contacto</a></li>
+    </ul>
+</div>
+    </div>
+    <div id="separador"></div>
+    <form class="iform">
+        <label for="iname">Nombre:</label>
         <input id="iname" type="text" name="nombre"><br>
 
-        <label for="iape">apellido:</label>
+        <label for="iape">Apellido:</label>
         <input id="iape" type="text" name="apellido"><br>
 
-        <label for="iemail">Email:</label>
+        <label for="iemail">  Email:</label>
         <input id="iemail" type="email" name="email"><br>
 
         <input type="submit" value="Enviar">
 
     </form>
+    
 </body>
 </html>
