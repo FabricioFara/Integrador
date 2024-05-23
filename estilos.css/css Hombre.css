@@ -64,4 +64,8 @@ ul,ol{
 
     display: flex;
     gap: 20px;
+    text-align: center;
+}
+.ropa{
+    background-color: rgb(223, 223, 223);
 }
