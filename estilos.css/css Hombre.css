@@ -60,3 +60,8 @@ ul,ol{
     width: 500px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+.box{
+
+    display: flex;
+    gap: 20px;
+}
