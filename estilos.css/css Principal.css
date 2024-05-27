@@ -63,7 +63,7 @@ ul,ol{
 .contenedor{
     text-align: center;
 }
-#flechaiz{
+.flechaiz{
     float: left;
     font-size: 70px;
     margin: 100px;
@@ -73,7 +73,7 @@ ul,ol{
     width: 80px;
     border-radius: 100%;
 }
-#flechade{
+.flechade{
     float: right;
     font-size: 70px;
     margin: 100px;
