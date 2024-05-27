@@ -35,4 +35,11 @@ if(numero.value.lenght>0 && !tel.test(numero.value) ) {
     errores.push("Numero invalido(no puede comenzar con 0 y no puede ser mayor que 10)");
     numero.classList.add("error");
 }
+for(let err of errores){
+    let li = document.createElement("li");
+    error.appendChild(li);
+
+}
+
+
 }
