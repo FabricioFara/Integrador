@@ -10,36 +10,47 @@ function validar() {
     let tel = /^[1-9]\d{9}$/;
     let nbr=textnombre.value.trim();
     let apell=textapellido.value.trim();
-    if(nbr.lenght==0) {
+    if(nbr.length==0) {
         errores.push("falta el nombre");
         textnombre.classList.add("error");
 
-    } else if(nbr.lenght>9) {
+    } else if(nbr.length>9) {
         errores.push("nombre muy largo");
         textnombre.classList.add("error");
     }
-    if(apell.lenght==0) {
+    
+    if(apell.length==0) {
         errores.push("falta el apellido");
         textapellido.classList.add("error");
 
-    } else if(apell.lenght>9) {
+    } else if(apell.length>9) {
         errores.push("apellido muy largo");
         textapellido.classList.add("error");
     }
-if(numero.value.lenght>10) {
+if(numero.value.length>10) {
     errores.push("Numero muy largo");
     numero.classList.add("error");
 
 }
-if(numero.value.lenght>0 && !tel.test(numero.value) ) {
+if(numero.value.length>0 && !tel.test(numero.value) ) {
     errores.push("Numero invalido(no puede comenzar con 0 y no puede ser mayor que 10)");
     numero.classList.add("error");
 }
 for(let err of errores){
     let li = document.createElement("li");
     error.appendChild(li);
+    li.textContent= err;
+    
 
 }
+if(errores.length == 0){
+    let li = document.createElement("li")
+    if(numero.value.length>0){
 
+            li.innerHTML = `Bienvenido ${nbr} ${apell}, te esteremos llamando al numero ${numero.value}`
+    }
+    
+}
+return false;
 
 }
