@@ -99,3 +99,12 @@ ul,ol{
     height: 200px;
 
 }
+button{
+
+        height: 40px;
+        width: 70px;
+}
+h1{
+    color: azure;
+    text-align: center;
+}

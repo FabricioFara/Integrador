@@ -9,7 +9,7 @@
 <body>
     
     <div class="menu">
-        <img id="imagen" src="imagenes/Jarkov.jpg" alt="imagen principal">
+        <a href="index.html"><img id="imagen"  src="imagenes/Jarkov.jpg" alt="imagen principal"></a>
 <div id="header">
     <ul class="menu-lista">
         <li><a  href="index.html">Inicio</a></li>
@@ -24,19 +24,22 @@
 </div>
     </div>
     <div id="separador"></div>
-    <form class="iform">
-        <label for="iname">Nombre:</label>
-        <input id="iname" type="text" name="nombre"><br>
+    <h1>Formulario</h1>
+    <form class="iform" onsubmit="return validar()">
+        <label>Nombre:</label>
+        <input id="iname"><br>
 
-        <label for="iape">Apellido:</label>
-        <input id="iape" type="text" name="apellido"><br>
+        <label>Apellido:</label>
+        <input id="iapell"><br>
 
-        <label for="iemail">  Email:</label>
-        <input id="iemail" type="email" name="email"><br>
+        <label>Email:</label>
+        <input id="iemail"><br>
 
-        <input type="submit" value="Enviar">
+        <button type="submit">Enviar</button>
 
     </form>
-    
+    <ul id="mostrar-error"></ul>
+    <ol id="mostrar-dato"></ol>
+    <script src="scripts/formulario.js"></script>
 </body>
 </html>

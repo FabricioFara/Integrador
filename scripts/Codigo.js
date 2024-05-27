@@ -7,7 +7,7 @@ const imagenes = [
     'imagenes carrousel/ima6.jpg'
 ];
 
-let indiceActual = 0;
+let cont = 0;
 
 function mostrarImagen(indice) {
     const imgElement = document.getElementById('inicio');
@@ -15,23 +15,23 @@ function mostrarImagen(indice) {
 }
 
 function izquierda() {
-    if (indiceActual > 0) {
-        indiceActual--;
+    if (cont > 0) {
+        cont--;
     } else {
-        indiceActual = imagenes.length - 1;
+        cont = imagenes.length - 1;
     }
-    mostrarImagen(indiceActual);
+    mostrarImagen(cont);
 }
 
 function derecha() {
-    if (indiceActual < imagenes.length - 1) {
-        indiceActual++;
+    if (cont < imagenes.length - 1) {
+        cont++;
     } else {
-        indiceActual = 0;
+        cont = 0;
     }
-    mostrarImagen(indiceActual);
+    mostrarImagen(cont);
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    mostrarImagen(indiceActual);
+    mostrarImagen(cont);
 });
