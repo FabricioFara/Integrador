@@ -11,6 +11,7 @@ function validar() {
     let tel = /^[1-9]\d{9}$/;
     let nbr=textnombre.value.trim();
     let apell=textapellido.value.trim();
+    
     if(nbr.length==0) {
         errores.push("falta el nombre");
         textnombre.classList.add("error");
@@ -28,6 +29,7 @@ function validar() {
         errores.push("apellido muy largo");
         textapellido.classList.add("error");
     }
+    
 if(numero.value.length>10) {
     errores.push("Numero muy largo");
     numero.classList.add("error");
@@ -36,6 +38,7 @@ if(numero.value.length>10) {
 if(numero.value.length<0 && !tel.test(numero.value) ) {
     errores.push("Numero invalido(no puede comenzar con 0 y no puede ser mayor que 10)");
     numero.classList.add("error");
+    
 }
 for(let err of errores){
     let li = document.createElement("li");
