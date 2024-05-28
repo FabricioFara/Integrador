@@ -5,6 +5,7 @@ let error = document.getElementById("mostrar-error");
 let datos = document.getElementById("mostrar-dato");
 function validar() {
     error.innerHTML=" ";
+    datos.innerHTML=" ";
     textnombre.classList.remove("error")
     let errores=[];
     let tel = /^[1-9]\d{9}$/;
@@ -32,7 +33,7 @@ if(numero.value.length>10) {
     numero.classList.add("error");
 
 }
-if(numero.value.length>0 && !tel.test(numero.value) ) {
+if(numero.value.length<0 && !tel.test(numero.value) ) {
     errores.push("Numero invalido(no puede comenzar con 0 y no puede ser mayor que 10)");
     numero.classList.add("error");
 }
@@ -49,7 +50,9 @@ if(errores.length == 0){
 
             li.innerHTML = `Bienvenido ${nbr} ${apell}, te esteremos llamando al numero ${numero.value}`
     }
-    
+    datos.appendChild(li)
+    document.forms[0].reset();
+
 }
 return false;
 
