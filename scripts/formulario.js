@@ -17,7 +17,7 @@ function validar() {
     let num = numero.value.trim();
     
     if(nbr.length==0) {
-        errores.push("falta el nombre");
+        errores.push("falta tu nombre");
         textnombre.classList.add("error");
         textnombre.value = "";
 
@@ -33,7 +33,7 @@ function validar() {
     }
     
     if(apell.length==0) {
-        errores.push("falta el apellido");
+        errores.push("falta tu apellido");
         textapellido.classList.add("error");
         textapellido.value = "";
 
@@ -70,7 +70,7 @@ if(errores.length == 0){
     let li = document.createElement("li")
     if(numero.value.length>0){
 
-            li.innerHTML = `Bienvenido ${nbr} ${apell}, te esteremos llamando al numero ${numero.value}`
+            li.innerHTML = `Bienvenido/a ${nbr} ${apell}, te estaremos llamando al numero ${numero.value}`
     }
     datos.appendChild(li)
     document.forms[0].reset();
